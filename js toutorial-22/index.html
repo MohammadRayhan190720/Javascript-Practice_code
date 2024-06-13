@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use Break and Continue Keywords</title>
+</head>
+<body>
+
+
+  <script>
+    // for(var i = 1; i<=100; i = i+1){
+      
+    //   document.write(""+i);
+
+    //   if(i == 10 ){
+    //     break;
+    //   }
+    // }
+
+    // for(var i = 1; i<=100; i = i+1){
+    //   if(i == 10 ){
+    //     continue;
+    //   }  document.write(""+i);
+    // }
+  
+    // odd number printing program
+    for(var i = 1; i<=100; i = i+1){
+      if(i %2 == 0){
+        continue;
+      }  document.write(""+i);
+    }
+     //even number printing program
+    for(var i = 1; i<=100; i = i+1){
+      if(i %2 != 0){
+        continue;
+      }  document.write("<br>"+i);
+    }
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Use of Ternary Operator</title>
+</head>
+<body>
+
+  <script>
+    // Positive/negative
+    // useing if,else
+
+    // var num = prompt("Enter Your Number: ");
+    // if ( num > 0){
+    //   document.write("Positive");
+    // }
+    //   else{
+    //     document.write("Negative");
+    //   }
+
+
+    // useing ternary Operator
+    // var num = prompt("Enter a Number: ");
+    //  var result = num > 0 ? "Positive" : "Negative"
+    //  document.write(result);
+
+    //positive/Negative/Zero
+    //useing ternary operator
+    // var number = prompt("Enter your Number: ");
+    // var result = number > 0 ? "positive" : number < 0 ? "Negative" : "Zero"
+    // document.write(result);
+    
+    // 3 number them learge number
+    //useing ternary Number
+    var num1 = prompt("Enter Frist Number: ");
+    var num2 = prompt("Enter Second Number: ");
+    var num3 = prompt("Enter Third Number: ");
+    var result = num1 > num2 && num1> num3 ? num1 : num2 > num3 && num2 >num1 ? num2 : num3
+    document.write("learge number is"+result);
+  </script>
+  
+</body>
+</html>

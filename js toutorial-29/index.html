@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Dimensional Array task-8</title>
+</head>
+<body>
+  <script>
+  //   <!-- one dimensional array -->
+  // task-8 creat a function called highest score that will
+  // * Reveive a 1D array function called score
+  // * Return the Highest score
+  function heightestScore(){
+            var max = score[0];
+            for(var x = 1; x <=score.length; x++){
+              if( max < score[x]){
+                max = score[x];
+              }
+            }
+            return max;
+  }
+  var score = [10,20,98,5,30];
+  var maxScore = heightestScore(score);
+  console.log(maxScore);
+  </script>
+
+  
+  
+  
+  
+</body>
+</html>

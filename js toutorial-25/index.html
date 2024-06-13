@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIFEs and Function Expression</title>
+</head>
+<body>
+
+
+
+<script>
+    //IIFES(Immediately Invokeable Funtion Expressions)
+    
+    (function display(massage){
+      document.write(massage);
+    })("Bangladesh");
+
+   // task-7 creat an IIFEs that print sum of 2 numbers
+   (function sum(x,y){
+         var  result = x+y;
+        document.write("sum"+result+"<br>");
+   })(10,5);
+    
+   //Function Expression
+  var display2 = function massage(){
+       document.write("India");
+     }
+     display2();
+
+</script>
+ 
+  
+</body>
+</html>

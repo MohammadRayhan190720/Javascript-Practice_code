@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D Array</title>
+</head>
+<body>
+
+   <script>
+    // var playerInfo = [ ["Ashraful",95],["Sakib",21],["Musi",3],["Riyada", 45],["Mash", 13]];
+    
+    // for( var x = 0; x < 5; x++){
+    //   for(var y = 0; y < 2; y++){
+
+
+    //   }
+    //   console.log(playerInfo);
+
+
+    // } 
+
+    //Creat a function called heightRunScorer that will
+       //*receive a 2D Array called playerInfo
+       //*Based on heightscore,return the name of the palyer
+
+       function heightRunScorer(playerInfo){
+        var heightscorer = playerInfo[0][0];
+        var heightscore = playerInfo[0][1];
+        for( var x = 1; x < playerInfo.length; x++){
+            if(heightscore < playerInfo[x][1]){
+              heightscore = playerInfo[x][1];
+              heightscorer = playerInfo[x][0];
+            }
+
+            
+          
+           }
+         return heightscorer;
+       }
+
+
+       
+       var playerInfo =  [ ["Ashraful",95],["Sakib",21],["Musi",3],["Riyada", 45],["Mash", 13]];
+       var playerName = heightRunScorer(playerInfo);
+       console.log(playerName);
+  </script>
+  
+</body>
+</html>
