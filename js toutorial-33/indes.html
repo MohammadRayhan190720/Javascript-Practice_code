@@ -8,24 +8,49 @@
 <body>
 
   <script>
-  var numofWon = 0;
-  var numofLost = 0;
+//   var numofWon = 0;
+//   var numofLost = 0;
 
-  for (var i =1; i<=5; i++){
+//   for (var i =1; i<=5; i++){
     
-var guessNumber = parseInt(prompt("Enter a guess Number form 1 to 5: "));
- var randomNumber = Math.floor(Math.random()*5) + 1;
- if (guessNumber == randomNumber){
-  console.log("you have won");
-  numofWon++;
+// var guessNumber = parseInt(prompt("Enter a guess Number form 1 to 5: "));
+//  var randomNumber = Math.floor(Math.random()*5) + 1;
+//  if (guessNumber == randomNumber){
+//   console.log("you have won");
+//   numofWon++;
+//  }
+//   else
+//   {   console.log("You have Lost.guess number is:"+randomNumber);
+//      numofLost++;
+//  }
+//   }
+//   document.write("Total Number Of Won: " + numofWon+"<br>");
+//   document.write("Total number of Lost: " + numofLost);
+ 
+let numberOfWon = 0;
+let numberOfLost = 0;
+
+
+
+
+ for (let i = 1; i <=5; i++){
+  const guessNumber = parseInt(prompt("Enter a guess Number form 1 to 5: "));
+const randomNumber = Math.floor(Math.random()*5)+1;
+
+if(guessNumber == randomNumber){
+  console.log("You have won");
+  numberOfWon++;
+} else{
+  console.log("You have Lost.guess number is :" + randomNumber);
+  numberOfLost++;
+}
+
+
  }
-  else
-  {   console.log("You have Lost.guess number is:"+randomNumber);
-     numofLost++;
- }
-  }
-  document.write("Total Number Of Won: " + numofWon+"<br>");
-  document.write("Total number of Lost: " + numofLost);
+ document.write("Total Number of Won:" +numberOfWon+"<br>");
+ document.write("Total Number of Lost:" +numberOfLost+"<br>");
+
+
 
   
 

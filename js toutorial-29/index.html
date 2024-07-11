@@ -11,17 +11,49 @@
   // task-8 creat a function called highest score that will
   // * Reveive a 1D array function called score
   // * Return the Highest score
-  function heightestScore(){
-            var max = score[0];
-            for(var x = 1; x <=score.length; x++){
+  // function highestScore (scores){
+  //   let max = scores [0];
+  //   for(let x =1; x <= scores.length; x++);{
+  //     if(max < scores[x]){
+  //       max = scores[x];
+  //     }
+     
+
+  //   }
+  //   return max;
+  // }
+
+  // const scores = [10,2,30,40,50,100];
+
+  // const maxScore = highestScore(scores);
+  // console.log(maxScore);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function heightestScore(score){
+            let max = score[0];
+            for(let x = 1; x <= score.length; x++){
               if( max < score[x]){
                 max = score[x];
               }
             }
             return max;
   }
-  var score = [10,20,98,5,30];
-  var maxScore = heightestScore(score);
+  let score = [10,20,98,5,30];
+  let maxScore = heightestScore(score);
   console.log(maxScore);
   </script>
 

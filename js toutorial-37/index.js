@@ -1,6 +1,6 @@
-// function myMassage1(){
-//   alert("I am Button 1");
-// }
+function myMassage1(){
+  alert("I am Button 1");
+}
 
 // function myMassage2(){
 //   alert("I am Button 2");
