@@ -5,17 +5,19 @@ textarea.addEventListener("keydown", function(e){
 
  }
 });
-// textarea.addEventListener("keypress", function(){
+// textarea.addEventListener("keypress", function(e){
 //      console.log("keypress");
+//       console.log(e.key);
+//       console.log(e.code);
 // });
 // textarea.addEventListener("keyup", function(){
 //      console.log("keyup");
 // });
-// textarea.addEventListener("keyup", function(e){
-    //  console.log(e.key);
-    //  console.log(e.code);
-    //  console.log(e.shiftKey);
-//     if(e.shiftKey);{
-//       console.log("shift +"+e.key);
-//     }
-// });
+textarea.addEventListener("keyup", function(e){
+     console.log(e.key);
+     console.log(e.code);
+     console.log(e.shiftKey);
+    if(e.shiftKey);{
+      console.log("shift +"+e.key);
+    }
+});

@@ -12,14 +12,21 @@ alert("this is Rayhan");
 
 });
 
-var myVar=document.querySelector("#myId");
-myVar.addEventListener("mouseover",function(){
-  myVar.classList.add("my-style");
-});
+// var myVar=document.querySelector("#myId");
+// myVar.addEventListener("mouseover",function(){
+//   myVar.classList.add("my-style");
+// });
 
-var myVar=document.querySelector("#myId");
-myVar.addEventListener("mouseout",function(){
-  myVar.classList.remove("my-style");
-});
-
+// var myVar=document.querySelector("#myId");
+// myVar.addEventListener("mouseout",function(){
+//   myVar.classList.remove("my-style");
+// });
+ const myDatails=document.querySelector("#myId");
+ myDatails.addEventListener("mouseover",function(){
+        myDatails.classList.add("my-style");
+ });
+ const myName=document.querySelector("#myId");
+ myName.addEventListener("mouseout",function(){
+        myName.classList.remove("my-style");
+ });
 

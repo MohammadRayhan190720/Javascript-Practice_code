@@ -30,15 +30,25 @@ function audioPlay(text){
 
 }
 
-function animation(text){
-  
-var selectButton=  document.querySelector("."+ text);
-selectButton.classList.add("anim");
+const animation = (text)=>{
+  let selectButton = document.querySelector("."+text);
+  selectButton.classList.add("anim");
 
-setTimeout(function(){
-  selectButton.classList.remove("anim");
-
-
-}, 1000)
-
+  setTimeout(function(){
+    selectButton.classList.remove("anim");
+  },2000)
 }
+
+
+// function animation(text){
+  
+// var selectButton=  document.querySelector("."+ text);
+// selectButton.classList.add("anim");
+
+// setTimeout(function(){
+//   selectButton.classList.remove("anim");
+
+
+// }, 1000)
+
+// }

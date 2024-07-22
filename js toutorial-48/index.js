@@ -2,11 +2,11 @@ const form = document.querySelector("form");
 const name = form.querySelector(" div #name");
 const email = form.querySelector(" div #email");
 const password = form.querySelector(" div #password");
-console.log(name, email, password);
+// console.log(name, email, password);
 
 form.addEventListener('submit',formSubmitHandler);
 
-function formSubmitHandler(e) {
+function formSubmitHandler(e){
 e.preventDefault();
   // console.log("submit");
   // console.log(name.value);

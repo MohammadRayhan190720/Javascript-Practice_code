@@ -13,7 +13,7 @@
 // }
 // deletMassage();
 
-//prompt
+// prompt
 function welcomeMassage(){
   var h1 = document.createElement("h1");
   let text;
@@ -32,3 +32,46 @@ h1.appendChild(textNode);
 document.body.appendChild(h1);
 }
 welcomeMassage();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function welcomeMessage(){
+//  let h1 = document.createElement("h1");
+//  let text;
+
+
+
+
+//   let name = prompt("Enter Your Name :");
+//   if (name == null || name == "") {
+//     text = "no name found";
+//   } else{
+//     text = "welcome " + name;
+//   }
+    
+//   let textNode = document.createTextNode(text);
+//   h1.appendChild(textNode);
+
+//   document.body.appendChild(h1);
+// }
+
+// welcomeMessage();
+
+
+
+
+
+
+

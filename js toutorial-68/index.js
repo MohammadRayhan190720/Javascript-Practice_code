@@ -25,3 +25,25 @@ let info = {
 }
 
 console.log(info['body name']());
+
+// function studentInfo(name,age){
+//   return{
+//     name,
+//     age,
+//   }
+// }
+// console.log(studentInfo("Rayhan",24));
+
+// let message ={
+//   body(){
+//     return `I am Javascript ES6 Object Function`
+//   }
+// }
+// console.log(message.body());
+
+// let info = {
+//   'body name'(){
+//     return `i am a web developer in Javascript and Mern stack`
+//   }
+// }
+// console.log(info['body name']());

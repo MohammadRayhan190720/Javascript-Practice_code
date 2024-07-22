@@ -1,4 +1,4 @@
-// const input = document.querySelector("input");
+const input = document.querySelector("input");
 // input.addEventListener("blur",function(){
 //   console.log("blur");
 // })
@@ -12,12 +12,12 @@
 //   console.log("focusout");
 // })
 
-const input = document.querySelector("input");
-input.addEventListener("blur",function(e){
+// const input = document.querySelector("input");
+input.addEventListener("blur",function(){
   // console.log("blur");
   input.style.backgroundColor= "green";
   input.style.padding= "5px";
-  // console.log(e.target.value);
+  console.log(e.target.value);
   input.value= e.target.value.toUpperCase();
 })
 input.addEventListener("focus",function(){

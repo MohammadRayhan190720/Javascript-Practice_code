@@ -28,20 +28,24 @@ var students =[
 
 ] 
 
+
+
+
+
 // traditional funtion use kre
-function studentNames(){
-  return students.filter(function(x){
-    return x.cgpa > 3;
-  }).map(function(y){
-    return y.name;
-})
+// function studentNames(){
+//   return students.filter(function(x){
+//     return x.cgpa > 3;
+//   }).map(function(y){
+//     return y.name;
+// })
 
 
 
 
-};
+// };
 
-console.log(studentNames());
+// console.log(studentNames());
 
 // arrow function use kre
 // const studentsNames = () =>{

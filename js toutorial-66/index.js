@@ -4,7 +4,7 @@ function message(text = "This is default peremater"){
   console.log(`${text}`);
 
 }
-message();
+// message();
 message("I Love Javascript");
 
 // rest parameter

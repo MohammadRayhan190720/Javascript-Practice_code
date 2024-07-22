@@ -1,4 +1,5 @@
-//input tag change event
+
+// input tag change event
 // const input = document.querySelector("input");
 // input.addEventListener('change',changeHandler);
 
@@ -25,19 +26,30 @@
 
 // checkbox and change event
 
-const programs = document.querySelectorAll('input[name=program]');
-console.log(programs);
+// const programs = document.querySelectorAll('input[name=program]');
+// console.log(programs);
 
-Array.from(programs).map((program) =>
-  program.addEventListener('change',programHandler)
+// Array.from(programs).map((program) =>
+//   program.addEventListener('change',programHandler)
 
 
-);
-function programHandler(e){
-  console.log("checked");
-  if(e.target.checked){
-    console.log("checked");
-    console.log(e.target.value);
-  }
+// );
+// function programHandler(e){
+//   console.log("checked");
+//   if(e.target.checked){
+//     console.log("checked");
+//     console.log(e.target.value);
+//   }
 
-}
+// }
+
+// textarea
+ const message = document.querySelector("textarea");
+ message.addEventListener('change',textareaHandler);
+
+ function textareaHandler(e){
+  console.log("changed");
+  console.log(e.target.value);
+  console.log(e.target.innerHTML);
+  console.log(e.target.classList); 
+ }

@@ -1,7 +1,7 @@
 try{
   alert("Hi Everyone");
   alert(x);
-  alert("Goodbye  Everyone");
+  // alert("Goodbye  Everyone");
 
 }catch(error){ 
   console.log("Sorry everyone");

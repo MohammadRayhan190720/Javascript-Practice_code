@@ -1,4 +1,7 @@
 // console.log(window);
+// console.log(location);
+// console.log(location.href);
+// console.log(location.hostname);
 const locationDiv = document.querySelector(".location-div");
 // console.log(locationDiv);
 var p1 = locationDiv.children[0];

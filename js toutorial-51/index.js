@@ -1,22 +1,22 @@
-// var div = document.querySelector(".my-div");
-// div.addEventListener('click', function(e){
-//   console.log("clicked");
-//   console.log(e.target);
-//   console.log(e.target.className);
-//   console.log(e.target.innerHTML);
-//   console.log(e.target.textContent);
-//   console.log(e.target.innerText);
-// })
+var div = document.querySelector(".my-div");
+div.addEventListener('click', function(e){
+  console.log("clicked");
+  console.log(e.target);
+  console.log(e.target.className);
+  // console.log(e.target.innerHTML);
+  // console.log(e.target.textContent);
+  console.log(e.target.innerText);
+})
 
 // datails about click
-const buttons = document.querySelectorAll(".btn");
+// const buttons = document.querySelectorAll(".btn");
 // console.log(buttons);
-Array.from(buttons).map((button) =>
-button.addEventListener("click", function(e){
-  console.log("clicked");
-  console.log(e.target.innerText);
+// Array.from(buttons).map((button) =>
+// button.addEventListener("click", function(e){
+//   console.log("clicked");
+//   console.log(e.target.innerText);
 
-}))
+// }))
 
 
 

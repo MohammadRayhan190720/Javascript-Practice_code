@@ -50,10 +50,12 @@ document.addEventListener("keypress", function(event)
 })
 
 // keypress listener program
-document.addEventListener("keypress", function(event){
-  var text = event.key;
-  document.querySelector("p").innerHTML = "You have passed"+"<br>" + text;
-})
+// document.addEventListener("keypress", function(event){
+//   var text = event.key;
+//   document.querySelector("p").innerHTML = "You have passed"+ "<br>" + text;
+// })
+
+
 // keypress listener program
 var count = 0;
 document.addEventListener("keypress", function(event){

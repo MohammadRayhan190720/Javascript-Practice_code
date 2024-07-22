@@ -1,6 +1,6 @@
 // array destructuring
 // let numbers = [10,20,30,40,50,60];
-// console.log(numbers[0], numbers[1], numbers[2], numbers[3], numbers[4]);
+// console.log(numbers[1]);
 
 // let numbers = [10,20,30,40,50,60];
 // let [num1,num2,num3,num4] = numbers;
@@ -47,6 +47,7 @@
 // }
 // const {name,age,gpa,address} = studentInfo;
 // console.log(address.nAddress);
+// console.log(gpa);
 
 // destructuring function parameter
 
@@ -58,13 +59,34 @@
 //   id : 101,
 // }
 // studentInfo(student);
-const studentInfo = ({name,id}) =>{
-console.log(`${name},${id}`);
+
+const studentInfo = ({address,skill}) =>{
+  console.log(`${address},${skill}`)
+
 }
-const student = {
-  name : "Rayhan",
-  id : 101,
+
+const students = {
+  address : "Bangladesh",
+  skill: "developer"
 }
-studentInfo(student);
+studentInfo(students);
+
+
+
+
+
+
+
+
+
+
+// const studentInfo = ({name,id}) =>{
+// console.log(`${name},${id}`);
+// }
+// const student = {
+//   name : "Rayhan",
+//   id : 101,
+// }
+// studentInfo(student);
 
 

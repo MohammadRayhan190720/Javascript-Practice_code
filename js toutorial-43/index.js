@@ -1,4 +1,4 @@
-// document.querySelectorAll(".my-button")[0].addEventListener("click", function(){
+ // document.querySelectorAll(".my-button")[0].addEventListener("click", function(){
 
 //   var text = this.innerHTML;
 //   document.querySelector("h1").innerHTML = text + "is clicked";
@@ -19,14 +19,39 @@
 
 // loop use kre  
 
-var len = document.querySelectorAll(".my-button").length;
+// var len = document.querySelectorAll(".my-button").length;
 
-for(var i = 0; i < len; i++) {
-  document.querySelectorAll(".my-button")[i].addEventListener("click", function(){
+// for(var i = 0; i < len; i++) {
+//   document.querySelectorAll(".my-button")[i].addEventListener("click", function(){
 
-    var text = this.innerHTML;
-    document.querySelector("h1").innerHTML = text + "is clicked";
+//     var text = this.innerHTML;
+//     document.querySelector("h1").innerHTML = text + "is clicked";
   
-  })
+//   })
+
+// }
+
+// document.querySelectorAll(".my-button")[0].addEventListener("click", function(){
+//   let text = this.innerHTML;
+  
+//   document.querySelector("h1").innerHTML = text  + "is clicked";
+// })
+// document.querySelectorAll(".my-button")[1].addEventListener("click", function(){
+//   let text = this.innerHTML;
+//   document.querySelector("h1").innerHTML = text + "is clicked";
+// });
+// document.querySelectorAll(".my-button")[2].addEventListener("click", function(){
+//   let text = this.innerHTML;
+//   document.querySelector("h1").innerHTML = text + "is clicked";
+// });
+
+let len = document.querySelectorAll(".my-button").length;
+
+for (let i = 0; i < len; i++) {
+  document.querySelectorAll(".my-button")
+    [i].addEventListener("click", function () {
+      let text = this.innerHTML;
+      document.querySelector("h1").innerHTML = text + "is clicked";
+    });
 
 }
