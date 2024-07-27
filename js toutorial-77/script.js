@@ -1,7 +1,6 @@
-// import {name,setText} from './myModule.js';
-// setText ("Goodbye Module ES6");
-// console.log(name);
-// console.log(setText);
+import {text ,setText} from './myModule.js';
+setText ("Goodbye Module ES6");
+console.log(text);
 
 // clases
 
@@ -21,7 +20,7 @@
 //     this.id = id;
 //     this.name = name;
 //   }
-//   set studentName(name){
+//   set studentName (name){
 // this.name = name;
 //   }
 

@@ -1,10 +1,14 @@
 // array methods|| find ()|| findIndex ()
 
-// let numbers = [5,55,14,78,30];
+let numbers = [50,55,14,78,30];
 // let fristEvenNumber = numbers.find(x => x%2===0)
 // let fristEvenNumberIndex = numbers.findIndex(x => x%2===0)
 // console.log(fristEvenNumber);
 // console.log(fristEvenNumberIndex);
+
+
+
+
 // function use kre
 // let numbers = [5,55,14,78,30];
 // const evenNumber = (value,array,index) =>{
@@ -36,7 +40,7 @@ let student = [
 
   {name : "Ra",
     id : 104,
-    gpa : 3.50,
+    gpa : 4.50,
   }
 ]
 console.log(student.find(x => x.gpa > 4));

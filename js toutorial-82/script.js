@@ -6,13 +6,16 @@ const taskOne = () => {
 };
 const taskTwo = () => {
   return new Promise((resolve, reject) => {
-    reject("task2 is not completed successfully");
+    resolve("task2 is  completed successfully");
   })
 
 };
 const taskThree = () => {
   return new Promise((resolve, reject) => {
-    reject("task3 is not completed successfully");
+    setTimeout(()=>{
+      resolve("task3 is completed successfully");
+    }, 3000)
+   
   })
 
 };
@@ -24,7 +27,7 @@ const taskFour = () => {
 };
 const taskFive = () => {
   return new Promise((resolve, reject) => {
-    resolve("task5 is completed successfully");
+    resolve("task5 is not completed successfully");
   })
 
 };
@@ -41,25 +44,52 @@ const taskFive = () => {
 // .catch((error) => console.log(error))
 
 const callAllTask = async () =>{
-  
+
   try {
-    const t1 = await taskOne();
-    console.log(t1);
-    const t2 = await taskTwo();
-    console.log(t2);
-    const t3 = await taskThree();
-    console.log(t3);
-    const t4 = await taskFour();
-    console.log(t4);
-    const t5 = await taskFive();
-    console.log(t5);
-  
-    
-  } catch (error) {
+     const t1 = await taskOne();
+  console.log(t1);
+  const t2 = await taskTwo();
+  console.log(t2);
+  const t3 = await taskThree();
+  console.log(t3);
+  const t4 = await taskFour();
+  console.log(t4);
+  const t5 = await taskFive();
+  console.log(t5);
+} catch (error) {
     console.log(error);
     
   }
-};
+}
+
+
+
+
+
+
+
+
+
+// const callAllTask = async () =>{
+  
+//   try {
+//     const t1 = await taskOne();
+//     console.log(t1);
+//     const t2 = await taskTwo();
+//     console.log(t2);
+//     const t3 = await taskThree();
+//     console.log(t3);
+//     const t4 = await taskFour();
+//     console.log(t4);
+//     const t5 = await taskFive();
+//     console.log(t5);
+  
+    
+//   } catch (error) {
+//     console.log(error);
+    
+//   }
+// };
 
 
 

@@ -1,14 +1,20 @@
 // synchronous vs asynchronous
 
 const taskOne = () => {
-  console.log(taskOne);
+  console.log("task1");
 };
 
-const dataLoading = () =>{
-  console.log("task2. Data Loading");
-};
+// const dataLoading = () =>{
+//   console.log("task2. Data Loading");
+// };
+// const taskTwo = () => {
+//   setTimeout(dataLoading,2000);
+ 
+// };
 const taskTwo = () => {
-  setTimeout(dataLoading,2000);
+  setTimeout(() =>{
+     console.log("task2. Data Loading");
+  },2000);
  
 };
 

@@ -1,8 +1,8 @@
-// callback and higher order function
+// // callback and higher order function
 // function square(x){
 //   console.log(`square of ${x}: ${x*x}`);
 // }
-// square(6);
+// // square(6);
 // const y = square;
 // y(5);
  
@@ -13,52 +13,94 @@
 
 // higherOrderFunction(6,square);
 
-
-
-
-
-
-
-
-
-
-
-const taskOne = (callback) => {
+const taskOne = (callback) =>{
   console.log("task1");
-      callback();
-};
+  callback();
+}
 
-
-const taskTwo = (callback) => {
-   setTimeout(() =>{
-    console.log("task2. Data Loading");
+const taskTwo = (callback) =>{
+  setTimeout(() =>{
+   console.log("task2.Data loading")
     callback();
-  },2000);
- 
-};
+  },3000);
+  
+}
 
-const taskThree = (callback) => {
+const taskThree = (callback) =>{
   console.log("task3");
   callback();
+}
 
-};
-const taskFive = (callback) => {
-  console.log("task5");
-  callback();
-};
-const taskFour = () => {
+const taskFour = (callback) =>{
   console.log("task4");
-};
+  callback();
+}
 
+const taskFive = () => {
+  console.log("task5");
+}
 
-taskOne(()=>{    //function ar name na like o hbe
-  taskTwo(function f2(){
-    taskThree(function f3(){
-      taskFive(function f5(){
-        taskFour();
+taskOne(() =>{
+  taskTwo(() =>{
+    taskThree(() =>{
+      taskFour(()=>{
 
       });
 
     });
+
   });
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const taskOne = (callback) => {
+//   console.log("task1");
+//       callback();
+// };
+
+
+// const taskTwo = (callback) => {
+//    setTimeout(() =>{
+//     console.log("task2. Data Loading");
+//     callback();
+//   },2000);
+ 
+// };
+
+// const taskThree = (callback) => {
+//   console.log("task3");
+//   callback();
+
+// };
+// const taskFive = (callback) => {
+//   console.log("task5");
+//   callback();
+// };
+// const taskFour = () => {
+//   console.log("task4");
+// };
+
+
+// taskOne(()=>{    //function ar name 
+//   taskTwo(function f2(){
+//     taskThree(function f3(){
+//       taskFive(function f5(){
+//         taskFour();
+
+//       });
+
+//     });
+//   });
+// });

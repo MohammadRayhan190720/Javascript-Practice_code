@@ -28,17 +28,34 @@
 // });
 
 //race();
-const promise3 = new Promise((resolve,reject)=>{
-  setTimeout(()=>{
-    resolve("Completed promise3")
+// const promise3 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     resolve("Completed promise3")
 
-  },3000);
-})
+//   },3000);
+// })
+// const promise4 = new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     resolve("Completed promise4")
+
+//   },2000);
+// })
+
+// Promise.race([promise3,promise4]).then((response)=>{console.log(response);});
+
+
+
 const promise4 = new Promise((resolve,reject)=>{
+
   setTimeout(()=>{
     resolve("Completed promise4")
+  },1000);
+});
 
+const promise5 = new Promise((resolve,reject)=>{
+  setTimeout(()=>{
+    resolve("Completed promise5")
   },2000);
-})
+});
 
-Promise.race([promise3,promise4]).then((response)=>{console.log(response);});
+Promise.race([promise4,promise5]).then((response)=>{console.log(response);});
