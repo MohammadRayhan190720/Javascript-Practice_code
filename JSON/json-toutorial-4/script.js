@@ -40,9 +40,18 @@ const data2 ={
   age : 18,
   gpa : 3.87
 }
+'{"name":"John", "age":30, "city":"New York"}';
+
 // console.log(JSON.stringify(data2));
 
 
 
 // console.log(JSON.parse('{"name":"tamanna","age":18,"gpa": 3.87}'));
+// object
+console.log(JSON.parse('{"name":"John", "age":30, "city":"New York"}'
+));
+
+// array
+const text = '["Ford", "BMW", "Audi", "Fiat"]';
+console.log(JSON.parse(text));
   
