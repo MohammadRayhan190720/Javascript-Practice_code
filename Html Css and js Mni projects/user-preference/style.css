@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.description{
+  background-color: aqua;
+  padding: 20px;
+  margin-top: 20px;
+}
+button{
+  font-size: 1rem;
+  margin-left: 20px;
+  width: 5%;
+}
+label{
+  margin-left: 20px;
+}
